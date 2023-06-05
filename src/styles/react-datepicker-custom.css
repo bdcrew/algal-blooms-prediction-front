@@ -1,0 +1,112 @@
+.custom-react-datepicker .react-datepicker {
+  @apply bg-gray-700 pb-7 border-none  rounded cursor-default;
+}
+
+.custom-react-datepicker .react-datepicker__triangle {
+}
+
+.custom-react-datepicker .react-datepicker__month-container {
+  @apply px-4;
+}
+.custom-react-datepicker .react-datepicker__header {
+  @apply pt-7.5 text-base font-normal border-0 bg-grey-700 font-sans;
+}
+.custom-react-datepicker .react-datepicker__navigation--previous {
+  width: 32px;
+  height: 32px;
+  top: 24px;
+  left: 16px;
+  border: none;
+  background: no-repeat center/100% url("/images/ic-active-arrow.png");
+  background-image: url("/images/ic-active-arrow.png");
+  background-repeat: no-repeat;
+}
+
+.custom-react-datepicker .react-datepicker__navigation-icon {
+  @apply hidden;
+}
+.custom-react-datepicker .react-datepicker__navigation--next {
+  width: 32px;
+  height: 32px;
+  top: 24px;
+  right: 16px;
+  border: none;
+  background: no-repeat center/100% url("/images/ic-active-arrow.png");
+  background-image: url("/images/ic-active-arrow.png");
+  background-repeat: no-repeat;
+  transform: rotate(180deg);
+}
+
+.custom-react-datepicker .react-datepicker__current-month {
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+}
+.custom-react-datepicker .react-datepicker__day-names {
+  padding-top: 26px;
+}
+
+.custom-react-datepicker .react-datepicker__day-name {
+  @apply w-8 m-0 font-sans text-micro font-normal text-white;
+}
+
+.custom-react-datepicker .react-datepicker__month {
+  margin: 0;
+}
+
+.custom-react-datepicker .react-datepicker__day {
+  @apply w-8 h-8 inline-flex justify-center items-center m-0 
+  font-sans text-small font-normal text-white rounded-none
+  hover:text-white hover:bg-grey-500 hover:rounded-none;
+}
+
+.custom-react-datepicker .react-datepicker__day--in-range {
+  background-color: rgba(49, 178, 128, 0.15);
+}
+
+.custom-react-datepicker .react-datepicker__day--in-selecting-range {
+  background-color: rgba(49, 178, 128, 0.15) !important;
+}
+
+.custom-react-datepicker .react-datepicker__day--selecting-range-start {
+  background-color: #46ffb8 !important;
+}
+
+.custom-react-datepicker .react-datepicker__day--selected {
+  background-color: #46ffb8;
+  color: black;
+
+  &:hover {
+    background-color: #46ffb8;
+    color: black;
+  }
+}
+.custom-react-datepicker .react-datepicker__day--range-start {
+  background: #46ffb8;
+  color: black;
+  overflow: hidden;
+}
+
+.custom-react-datepicker .react-datepicker__day--range-end {
+  background-color: #46ffb8;
+  color: black;
+}
+
+.custom-react-datepicker .react-datepicker__day--disabled {
+  color: #53525d;
+  cursor: no-drop;
+  &:hover {
+    border: 0;
+  }
+}
+
+.custom-react-datepicker .react-datepicker__day--outside-month {
+  visibility: hidden;
+}
+
+.custom-react-datepicker .react-datepicker__triangle {
+  @apply hidden;
+}
+.custom-react-datepicker .react-datepicker__week {
+  @apply flex py-1.5  overflow-hidden;
+}

@@ -2,12 +2,13 @@ import "@stackflow/plugin-basic-ui/index.css";
 import { basicRendererPlugin } from "@stackflow/plugin-renderer-basic";
 import { basicUIPlugin } from "@stackflow/plugin-basic-ui";
 import { stackflow } from "@stackflow/react";
-import MyActivity from "./pages/MyActivity";
-import "./index.css";
+import Home from "./pages/Home";
+import "./styles/index.css";
+import Predict from "./pages/Predict";
 
 export const { Stack, useFlow } = stackflow({
   transitionDuration: 350, // 전환 시간
-  activities: { MyActivity },
+  activities: { Home, Predict },
   plugins: [
     basicRendererPlugin(),
     basicUIPlugin({
@@ -20,5 +21,5 @@ export const { Stack, useFlow } = stackflow({
       },
     }),
   ],
-  initialActivity: () => "MyActivity",
+  initialActivity: () => "Home",
 });
