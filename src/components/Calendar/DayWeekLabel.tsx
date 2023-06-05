@@ -1,7 +1,7 @@
-import { PropsWithChildren, memo } from "react";
+import { PropsWithChildren } from "react";
 import Typography from "../Typography";
 
-interface P extends PropsWithChildren {}
+type P = PropsWithChildren;
 
 const MonthlyDayWeekLabel: React.FC<P> = ({ children }) => {
   return (

@@ -1,5 +1,4 @@
 import { PropsWithChildren } from "react";
-import { DEFAULT_TEXT_COLOR } from "@/constants/tailwindcss";
 
 const getFontWeightWihtTheme = (theme: TypographyTheme) => {
   if (theme.includes("400")) {
